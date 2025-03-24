@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    letter-spacing:2px;
+    
+}
+button{
+    cursor: pointer;
+}
+
+
+body{
+    background-image: url(./108069438-5ee79d80-7089-11eb-8264-08fdda7e0d11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    cursor: default;
+}
+
+.cover{
+    width: 100vw;
+    height: 125vh;
+    background-color: rgba(0, 0, 0, 0.319);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+header{
+    width: 100vw;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    width: 300px;
+
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+#sign{
+    width: 100px;
+    padding: 9px;
+    color: white;
+    background-color: red;
+    border: none;
+    font-size: 20px;
+}
+.pe3 {
+    margin-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.pe4 {
+    font-size: 40px;
+    margin-top: -150px;
+}
+select{
+    width: 80px;
+    padding: 6px;
+    background: none;
+    color: white;
+    border: 2px solid white;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+h5{
+    font-size: 29px;
+    margin-bottom: 25px;
+}
+
+p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+input{
+    width: 300px;
+    padding: 15px;
+    background: none;
+    
+}
+::placeholder{
+    color: white;
+}
+
+#started{
+    width: 300px;
+    padding: 15px;
+    background-color: red;
+    border: none;
+    margin-left: 10px;
+}
+
+.main2{
+    width: 100vw;
+    height: 380vh;
+    background-color: black;
+}
+
+.film img{
+    width: 280px;
+    height: 540px;
+    transition-duration: 2s;
+    position: relative;
+    cursor: pointer;
+}
+.pe {
+    font-size: 40px;
+}
+.film{
+    width: 100vw;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.reason img{
+      width: 90px;
+      height:90px ;
+      position: absolute;
+      top: 260px;
+      right: 0;
+      cursor: pointer;
+      
+}
+
+.reason{
+    width: 100vw;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+ .reason .item{
+    width: 350px;
+    height: 350px;
+    background: rgb(28,6,79);
+    background: linear-gradient(81deg, rgba(28,6,79,0.9607492655265231) 31%, rgba(17,17,160,0.8487044475993523) 94%);
+    position: relative;
+    padding: 10px;
+    font-weight: 100;
+    
+}
+
+.reason .item h3{
+    font-size: 35px;
+    padding-bottom: 15px;
+}
+.reason .item p{
+    font-size: 25px;
+}
+.pe2 {
+    font-size: 40px;
+}
+
+.detail{
+    width: 100vw;
+    height: 10%;
+}
+details{
+    width: 1100px;
+    height: 100px;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: rgb(32, 32, 32);
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(-65px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(-28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(-8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+}
+
+#logo{
+    animation: myAnim 1s linear 0s 100 normal backwards;
+}
+
+.film img:hover{
+    transform: scale(1.2);
+}
+
+.img{
+    width: 20px;
+    height: 50px;
+}
+
+#ul li:first-child{
+    position: relative;
+}
+
+.drop{
+     position: absolute;
+     top: 25px;
+     right: -20px;
+     display: block;
+     background-color: white;
+     width: 150px;
+     display: none;
+     
+}
+.drop li:hover{
+    background-color: gray;
+}
+.drop li{
+    color: black;
+    border: 1px solid black;
+}
+
+#ul li:first-child:hover .drop{
+    cursor: pointer;
+    display: block;
+}
+summary {
+    font-size: 30px;
+}
+.pei {
+    font-size: 10px;
+}
+.scrolh {
+    font-size: 70px;
+    width: 1000px;
+    margin-top: 100px;
+}
